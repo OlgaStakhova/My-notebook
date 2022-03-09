@@ -15,8 +15,12 @@ html {
 body {
   font-family: $main-font-family;
   background-color: $first-page-color;
+  background-image: url("../images/backgroundImg.jpg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
   font-size: 1.4rem;
-  color: $first-font-color;
+  color: $second-font-color;
 }
 
 h2 {
