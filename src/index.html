@@ -15,17 +15,51 @@
       <h2 class="nav-title">My notebook</h2>
     </nav>
   </header>
-  <section>
+  <section class="createNewNote">
     <form class="createNoteForm">
-    <input type="text" placeholder="write the name of the new note">
-    <button type="submit">Create new note</button>
+    <input type="text" placeholder="Write the name of the new note" class="createNoteForm-input">
+    <a class="open_modal createNoteForm-button" href="#open">Create new note</a>
   </form>
+
+  
+<div id="modal" class="modal bounceIn">
+    <div id="close_modal">x</div>
+    <div class="modal_txt">
+     <form>
+     <h3 class="modal-title">Name note: <span class="NameNoteModal">default</span> </h3> 
+
+     <div class="category-wraper">
+     <label for="category-select">Select your category:</label>
+     <select name="category" id="category-select">
+         <option value="">--Please select your category:--</option>
+         <option value="home">Home</option>
+         <option value="job">Job</option>
+         <option value="children">Children</option>
+         <option value="shopping">Shopping</option>
+     </select>
+    </div>
+
+    <div class="color-wraper">
+    <label for="colorWell">Color:</label>
+     <input type="color" value="#ff0000" id="colorWell">
+    </div>
+      <div>
+        <button type="submit" class="modal-form-btn-create" >Create</button>
+      </div>
+    </form>
+     
+    </div>
+</div>
+
 </section>
-<section>
+<section class="noteList">
   <ul>
     
   </ul>
 </section>
+<footer class="noteBookzFooter">
+  <p>Autor: Olha Stakhova   2022</p>
+</footer>
   
   
 </body>

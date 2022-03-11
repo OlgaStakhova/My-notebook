@@ -15,3 +15,49 @@ padding: 20px 0;
     font-size: large;
     font-weight: bold;
 }
+
+.createNewNote {
+    padding: 10px 0;
+    
+}
+
+.createNoteForm {
+    width: 500px;
+    margin: 0 auto;
+
+input {
+        width: 100%;
+    }
+}
+
+.createNoteForm-input {
+    width: 300px;
+    height: 30px;
+    border: 2px solid rgb(3, 53, 109);
+    margin: 10px 0;
+    padding: 0 15px;
+    background-color: rgb(255, 184, 251);
+    color: rgb(3, 53, 109);
+    font-weight: bold;
+    &::placeholder{
+        font-size: 12px;
+        color: #777;
+        font-weight: lighter;
+    }
+}
+
+.createNoteForm-button {
+    width: 200px;
+    height: 25px;
+    border: 2px solid rgb(3, 53, 109);
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: rgb(157, 223, 250);
+    color: rgb(3, 53, 109);
+    font-weight: bold;
+}
+
+.noteBookzFooter {
+    margin: 45px 0 0 25px;
+    
+}
