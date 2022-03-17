@@ -17,7 +17,7 @@
   </header>
   <section class="createNewNote">
     <form class="createNoteForm">
-    <input type="text" placeholder="Write the name of the new note" class="createNoteForm-input">
+    <input type="text" placeholder="Write the name of the new note" class="createNoteForm-input" required maxlength="100">
     <a class="open_modal createNoteForm-button" href="#open">Create new note</a>
   </form>
 
@@ -31,7 +31,7 @@
      <div class="category-wraper">
      <label for="category-select">Select your category:</label>
      <select name="category" id="category-select">
-         <option value="">--Please select your category:--</option>
+         <option value="star">--Please select your category:--</option>
          <option value="home">Home</option>
          <option value="job">Job</option>
          <option value="children">Children</option>

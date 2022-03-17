@@ -1,9 +1,15 @@
  {{#each this}}
  
-<li>
-    <p class="todo-name" id="{{id}}">
+<li class="note-item">
+    <div class="todo-note">
+    <img src="images/{{category}}.png" class="todo-icon" alt="category-note">
+    <p class="todo-name" style="color: {{color}};">
         {{name}}
     </p>
-    <button class="dele-todo-item">Delete</button>
+    </div>
+    <div class="todo-button">
+    <span class="edit-todo-item todo-item-button" title="Edit" data-item-id="{{id}}"></span>
+    <span class="dele-todo-item todo-item-button" title="Delete" data-item-id="{{id}}"></span>
+    </div>
 </li>
 {{/each}}

@@ -34,9 +34,9 @@ input {
     width: 300px;
     height: 30px;
     border: 2px solid rgb(3, 53, 109);
-    margin: 10px 0;
+    margin: 30px 0;
     padding: 0 15px;
-    background-color: rgb(255, 184, 251);
+    background-color: rgba(255, 184, 251, 0.3);
     color: rgb(3, 53, 109);
     font-weight: bold;
     &::placeholder{
@@ -47,12 +47,13 @@ input {
 }
 
 .createNoteForm-button {
+    padding: 10px;
     width: 200px;
     height: 25px;
     border: 2px solid rgb(3, 53, 109);
     border-radius: 10px;
     cursor: pointer;
-    background-color: rgb(157, 223, 250);
+    background-color: rgba(157, 223, 250, 0.4);
     color: rgb(3, 53, 109);
     font-weight: bold;
 }

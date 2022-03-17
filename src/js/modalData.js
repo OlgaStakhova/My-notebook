@@ -8,7 +8,7 @@ const noteFormCreateRef = document.querySelector('#create-todo-form');
 let modal = document.getElementById('modal');
 const noteListRef = document.querySelector('#noteList');
 
-const todoCollection = [];
+let todoCollection = [];
 
 function dataCollectionHandler(event) {
     event.preventDefault();
@@ -36,5 +36,34 @@ function renderTodoList() {
     }, 500);
 };
 
+function handlerItemEvent(event) {
+  if(!event.target.title){
+    return
+  }
+  let typeButton =event.target.title;
+  let itemId =event.target.dataset.itemId;
+   if (typeButton === 'Edit') {
+    editItem(itemId);
+  }
+  if (typeButton === 'Delete') {
+    deleteItem(itemId);
+  }
+}
+
+function editItem(id) {
+console.log('edit button click', id)
+}
+
+function deleteItem(id) {
+  console.log('delete button click', id)
+  const filteredArray = todoCollection.filter(item =>{
+   return item.id!==id
+  })
+  todoCollection = filteredArray;
+  renderTodoList()
+  }
+
 
 noteFormCreateRef.addEventListener('submit', dataCollectionHandler);
+
+noteListRef.addEventListener('click', handlerItemEvent);
