@@ -5,7 +5,7 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-   <title>My notebook </title>
+  <title>My notebook </title>
 </head>
 
 <body>
@@ -15,53 +15,84 @@
       <h2 class="nav-title">My notebook</h2>
     </nav>
   </header>
+
   <section class="createNewNote">
     <form class="createNoteForm">
-    <input type="text" placeholder="Write the name of the new note" class="createNoteForm-input" required maxlength="100">
-    <a class="open_modal createNoteForm-button" href="#open">Create new note</a>
-  </form>
-
-  
-<div id="modal" class="modal bounceIn">
-    <div id="close_modal">x</div>
-    <div class="modal_txt">
-     <form id="create-todo-form">
-     <h3 class="modal-title">Name note: <span class="NameNoteModal"></span> </h3> 
-
-     <div class="category-wraper">
-     <label for="category-select">Select your category:</label>
-     <select name="category" id="category-select">
-         <option value="star">--Please select your category:--</option>
-         <option value="home">Home</option>
-         <option value="job">Job</option>
-         <option value="children">Children</option>
-         <option value="shopping">Shopping</option>
-     </select>
-    </div>
-
-    <div class="color-wraper">
-    <label for="colorWell">Color:</label>
-     <input type="color" value="#ff0000" id="colorWell">
-    </div>
-      <div>
-        <button type="submit" class="modal-form-btn-create" >Create</button>
-      </div>
+      <input type="text" placeholder="Write the name of the new note" class="createNoteForm-input" required
+        maxlength="100">
+      <a class="open_modal createNoteForm-button" href="#open">Create new note</a>
     </form>
-     
+
+    <div id="modal" class="modal bounceIn">
+      <div id="close_modal">x</div>
+      <div class="modal_txt">
+        <form id="create-todo-form">
+          <h3 class="modal-title">Name note: <span class="NameNoteModal"></span> </h3>
+
+          <div class="category-wraper">
+            <label for="category-select">Select your category:</label>
+            <select name="category" id="category-select">
+              <option value="star">--Please select your category:--</option>
+              <option value="home">Home</option>
+              <option value="job">Job</option>
+              <option value="children">Children</option>
+              <option value="shopping">Shopping</option>
+            </select>
+          </div>
+
+          <div class="color-wraper">
+            <label for="colorWell">Color:</label>
+            <input type="color" value="#ff0000" id="colorWell">
+          </div>
+          <div>
+            <button type="submit" class="modal-form-btn-create">Create</button>
+          </div>
+        </form>
+
+      </div>
     </div>
-</div>
 
-</section>
-<section class="note-list">
-  <ul id="noteList">
-    
-  </ul>
-</section>
-<footer class="noteBookzFooter">
-  <p>Autor: Olha Stakhova   2022</p>
-</footer>
-  
-  
+
+    <div id="modalEdit" class="modal bounceIn">
+      <div id="close_modalEdit">x</div>
+      <div class="modal_txt">
+        <form id="edit-todo-form">
+          <p class="modal-title">Name note: </p>
+          <input type="text" class="modal-title-edit">
+
+          <div class="category-wraper">
+            <label for="category-select">Select your category:</label>
+            <select name="category" id="category-select" class="category-select-edit">
+              <option value="star">--Please select your category:--</option>
+              <option value="home">Home</option>
+              <option value="job">Job</option>
+              <option value="children">Children</option>
+              <option value="shopping">Shopping</option>
+            </select>
+          </div>
+
+          <div class="color-wraper">
+            <label for="colorWell">Color:</label>
+            <input type="color" value="#ff0000" id="colorWell" class="colorWellEdit">
+          </div>
+          <div>
+            <button type="submit" class="modal-form-btn-create">Edit</button>
+          </div>
+        </form>
+
+      </div>
+    </div>
+
+  </section>
+
+  <section class="note-list">
+        <ul id="noteList">
+
+        </ul>
+  </section>
+  <footer class="noteBookzFooter">
+    <p>Autor: Olha Stakhova 2022</p>
+  </footer>
+
 </body>
-
 </html>

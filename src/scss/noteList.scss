@@ -12,7 +12,6 @@
     height: 55px;
     display: flex;
     justify-content: space-between;
-
   }
 
   .todo-note {
@@ -24,8 +23,8 @@
     font-weight: bold;
     font-size: 24px;
     overflow-y: auto;
-   overflow-x: none;
-   word-break: break-all;
+    overflow-x: none;
+    word-break: break-all;
   }
 
   .dele-todo-item {
@@ -46,11 +45,9 @@
   .todo-item-button {
     height: 15px;
     width: 15px;
-    // background-color: rgb(173, 166, 166);
     cursor: pointer;
     display: block;
   }
-
 
   .todo-icon {
     width: 35px;

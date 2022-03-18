@@ -1,15 +1,16 @@
- {{#each this}}
- 
-<li class="note-item">
-    <div class="todo-note">
-    <img src="images/{{category}}.png" class="todo-icon" alt="category-note">
-    <p class="todo-name" style="color: {{color}};">
+{{#each this}}
+
+  <li class='note-item'>
+    <div class='todo-note'>
+      <img src='images/{{category}}.png' class='todo-icon' alt='category-note'/>
+      <p class='todo-name' style='color: {{color}};'>
         {{name}}
-    </p>
+      </p>
     </div>
-    <div class="todo-button">
-    <span class="edit-todo-item todo-item-button" title="Edit" data-item-id="{{id}}"></span>
-    <span class="dele-todo-item todo-item-button" title="Delete" data-item-id="{{id}}"></span>
+
+    <div class='todo-button'>
+      <span class='edit-todo-item todo-item-button open_modalEdit' title='Edit' data-item-id='{{id}}'></span>
+      <span class='dele-todo-item todo-item-button' title='Delete' data-item-id='{{id}}'></span>
     </div>
-</li>
+  </li>
 {{/each}}

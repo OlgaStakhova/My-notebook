@@ -13,7 +13,7 @@ html {
 }
 
 body {
-  height: 100vh;
+  min-height: 100vh;
   font-family: $main-font-family;
   background-color: $first-page-color;
   background-image: url("../images/backgroundImg.jpg");
